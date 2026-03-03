@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Programação Web</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+        }
+
+        .container {
+            border: 2px solid black;
+            padding: 30px;
+            width: 400px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        input {
+            margin: 5px 0;
+            padding: 5px;
+        }
+
+        button {
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+
+        .resultado {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Programação Web</h1>
+
+    <p>
+        Digite uma palavra:
+        <input type="text" id="palavra">
+        <button onclick="alterarPalavra()">ALTERAR</button>
+    </p>
+
+    <p>
+        Palavra digitada:
+        <span id="mostrarPalavra">Nenhuma palavra</span>
+    </p>
+
+    <hr>
+
+    <h3>Calculadora:</h3>
+
+    <p>
+        Num1:
+        <input type="number" id="num1">
+    </p>
+
+    <p>
+        Num2:
+        <input type="number" id="num2">
+    </p>
+
+    <p>
+        <button onclick="somar()">Somar</button>
+    </p>
+
+    <p>
+        Soma:
+        <span id="resultadoSoma"></span>
+    </p>
+
+</div>
+
+<script>
+    function alterarPalavra() {
+        let palavra = document.getElementById("palavra").value;
+
+        if (palavra === "") {
+            document.getElementById("mostrarPalavra").innerText = "Nenhuma palavra";
+        } else {
+            document.getElementById("mostrarPalavra").innerText = palavra;
+        }
+    }
+
+    function somar() {
+        let n1 = Number(document.getElementById("num1").value);
+        let n2 = Number(document.getElementById("num2").value);
+
+        let soma = n1 + n2;
+
+        document.getElementById("resultadoSoma").innerText = soma;
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,177 @@
+Boa pergunta, Elias 😄 (como você já está programando em Java, vai pegar JS bem rápido!)
+
+## 📌 O que é JavaScript?
+
+**JavaScript** é uma linguagem usada principalmente para criar interatividade em sites (botões, animações, formulários, jogos, etc).
+
+Ela roda:
+
+* 🌐 No navegador (Chrome, Edge, etc.)
+* 🖥️ No computador com **Node.js**
+
+---
+
+# 🚀 Como começar a programar em JavaScript
+
+## 1️⃣ Usando no navegador (mais fácil)
+
+Cria um arquivo `index.html` assim:
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Meu primeiro JS</title>
+</head>
+<body>
+
+    <h1>Olá Mundo</h1>
+
+    <script>
+        alert("Olá, Elias!");
+        console.log("Isso aparece no console");
+    </script>
+
+</body>
+</html>
+```
+
+Depois:
+
+* Abre no navegador
+* Aperta **F12**
+* Vai em **Console**
+
+---
+
+## 2️⃣ Estrutura básica do JavaScript
+
+### ✅ Variáveis
+
+```javascript
+let nome = "Elias";
+const idade = 16;
+var cidade = "Fortaleza";
+```
+
+👉 `let` = pode mudar
+👉 `const` = não pode mudar
+👉 `var` = antigo (quase não usa mais)
+
+---
+
+### ✅ Entrada e saída
+
+```javascript
+let nome = prompt("Qual seu nome?");
+alert("Olá " + nome);
+```
+
+---
+
+### ✅ Condições (igual Java)
+
+```javascript
+let idade = 18;
+
+if (idade >= 18) {
+    console.log("Maior de idade");
+} else {
+    console.log("Menor de idade");
+}
+```
+
+---
+
+### ✅ Laços de repetição
+
+```javascript
+for (let i = 0; i < 5; i++) {
+    console.log("Número: " + i);
+}
+```
+
+---
+
+### ✅ Funções
+
+```javascript
+function somar(a, b) {
+    return a + b;
+}
+
+console.log(somar(5, 3));
+```
+
+---
+
+# 🔥 Diferença importante entre Java e JavaScript
+
+| Java                      | JavaScript       |
+| ------------------------- | ---------------- |
+| Precisa de `public class` | Não precisa      |
+| Tipagem forte             | Tipagem dinâmica |
+| Compila                   | Interpreta       |
+
+Exemplo:
+
+Java:
+
+```java
+int idade = 18;
+```
+
+JavaScript:
+
+```javascript
+let idade = 18;
+```
+
+Mais simples 👀
+
+---
+
+# 🖥️ Quer usar no VS Code?
+
+Instala:
+
+* **Node.js**
+
+Depois cria um arquivo:
+
+```bash
+arquivo.js
+```
+
+E roda no terminal:
+
+```bash
+node arquivo.js
+```
+
+---
+
+# 🎯 Próximo nível
+
+Depois que aprender o básico, você pode estudar:
+
+* DOM (mexer nos elementos da página)
+* Eventos (cliques, teclado)
+* APIs
+* Frameworks como:
+
+  * **React**
+  * **Vue.js**
+  * **Node.js** (backend)
+
+---
+
+Se quiser, posso montar:
+
+* ✅ Um mini projeto simples
+* ✅ Um sistema de login básico
+* ✅ Um joguinho
+* ✅ Um CRUD
+* ✅ Um roadmap de estudos pra você
+
+Qual você quer aprender primeiro? 😄
