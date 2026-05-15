@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Bolls</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #d81515;
+            padding: 30px;
+        }
+
+        .container {
+            background-color: rgb(59, 62, 253);
+            max-width: 500px;
+            margin: auto;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        input {
+            width: 70%;
+            padding: 10px;
+        }
+
+        button {
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            background-color: #6188f3;
+            margin-top: 10px;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-radius: 5px;
+        }
+
+        .concluida {
+            text-decoration: line-through;
+            color: rgb(0, 255, 0);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Lista de Tarefas</h1>
+
+        <input type="text" id="tarefa" placeholder="Digite uma tarefa">
+
+        <button onclick="adicionarTarefa()">
+            Adicionar
+        </button>
+
+        <p>
+            Total de tarefas:
+            <span id="contador">0</span>
+        </p>
+
+        <ul id="lista"></ul>
+    </div>
+
+    <script>
+        function adicionarTarefa() {
+
+            let input = document.getElementById("tarefa");
+
+            let texto = input.value;
+
+            if (texto === "") {
+                alert("Digite uma tarefa!");
+                return;
+            }
+
+            let li = document.createElement("li");
+
+            let span = document.createElement("span");
+            span.innerText = texto;
+
+            span.onclick = function () {
+                span.classList.toggle("concluida");
+            };
+
+            let botaoRemover = document.createElement("button");
+            botaoRemover.innerText = "Remover";
+
+            botaoRemover.onclick = function () {
+                li.remove();
+                atualizarContador();
+            };
+
+            li.appendChild(span);
+
+            li.appendChild(botaoRemover);
+
+            document.getElementById("lista").appendChild(li);
+
+            input.value = "";//limpa o campo de texto
+
+            atualizarContador();
+        }
+
+        function atualizarContador() {
+
+            let quantidade =
+                document.querySelectorAll("#lista li").length;
+
+            document.getElementById("contador").innerText =
+                quantidade;
+        }
+    </script>
+
+</body>
+</html>
