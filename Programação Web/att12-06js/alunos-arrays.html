@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <title>Lista de Alunos</title>
+</head>
+<body>
+  <h2>Alunos (<span id="quantidade"></span>)</h2>
+  <ul id="lista"></ul>
+<script>
+  const alunos = ["João", "Maria", "Pedro", "Anna" , "essa poha ta contando ou eu errei essa merda dnv?"];
+  const lista = document.getElementById("lista");
+  const quantidade = document.getElementById("quantidade");
+  
+
+ 
+
+    alunos.forEach(nome => {
+      const li = document.createElement('li');
+      li.textContent = nome;
+      lista.appendChild(li);
+    });
+  quantidade.textContent = alunos.length;
+</script>
+</body>
+</html>

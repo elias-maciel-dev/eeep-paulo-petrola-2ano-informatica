@@ -16,7 +16,7 @@ class Pessoa {
     }
 }
 
-// HERANÇA
+
 class Aluno extends Pessoa {
     String matricula;
 
@@ -58,7 +58,6 @@ class Funcionario extends Pessoa {
     }
 }
 
-// ASSOCIAÇÃO
 class Responsavel {
     String nome;
     Aluno aluno;

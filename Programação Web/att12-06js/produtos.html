@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <title>Produtos</title>
+</head>
+<body>
+  <input type="text" id="campo" placeholder="Digite um produto..." />
+<button onclick="buscar()">Buscar</button>
+<p id="resultado"></p>
+
+
+<script>
+const produtos = ["arroz", "feijao", "macarrao", "leite", "cafe"];
+
+  function buscar() {
+    const digitado = document.getElementById("campo").value.toLowerCase();
+    const resultado = document.getElementById("resultado");
+
+    if (produtos.includes(digitado)) {
+      resultado.textContent = "Produto encontrado!";
+      
+    } else {
+      resultado.textContent = "Produto não encontrado.";
+    }
+  }
+
+</script>
+</body>
+</html>

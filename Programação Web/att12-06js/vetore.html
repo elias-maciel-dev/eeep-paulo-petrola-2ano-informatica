@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vetor</title>
+</head>
+<body>
+<script>
+    const vetor = [10, 5, 8, 10, 3, 5, 7, 8]; 
+    const semDuplicatas = [...new Set(vetor)];//Pensa assim: um Set é como uma caixa que não aceita repetição. Se você tentar colocar o 10 duas vezes, ele guarda só uma.
+
+    const removidos = vetor.length - semDuplicatas.length;
+
+    console.log("Vetor original:      ", vetor);
+    console.log("Vetor sem duplicatas:", semDuplicatas);
+    console.log("Elementos removidos: ", removidos);
+</script>
+</body>
+</html>
