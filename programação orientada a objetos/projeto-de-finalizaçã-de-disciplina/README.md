@@ -46,7 +46,7 @@ Conteudo (classe abstrata)
 
 1. Clone o repositório:
    ```bash
-   git clone https://github.com/seu-usuario/infogenero.git
+   git clone https://github.com/elias-maciel-dev/infogenero.git
    ```
 2. Compile o projeto:
    ```bash
