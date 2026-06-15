@@ -87,6 +87,8 @@ public class TelaPrincipal extends JFrame {
         btn.setBorderPainted(false);
         btn.setCursor(new Cursor(Cursor.HAND_CURSOR));
         btn.setBorder(BorderFactory.createEmptyBorder(10, 20, 10, 20));
+        btn.setOpaque(true);
+        btn.setContentAreaFilled(true);
         return btn;
     }
 
