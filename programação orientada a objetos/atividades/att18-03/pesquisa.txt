@@ -1,0 +1,4 @@
+
+
+Função: é um bloco de código que executa uma tarefa e pode retornar um valor.
+Método: em Java, praticamente toda função é chamada de método, porque ela sempre pertence a uma classe.
